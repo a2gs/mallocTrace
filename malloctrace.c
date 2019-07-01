@@ -26,14 +26,14 @@ void * trace_malloc(char *file, int line, size_t szmem)
 
 	p = malloc(szmem);
 
-	fprintf(stderr, "[%p]\t[%ld] bytes alloced at [%s] line [%d].\n", p, szmem, file, line);
+	fprintf(stderr, "[%p]\t[%ld] bytes allocated at [%s] line [%d].\n", p, szmem, file, line);
 
 	return(p);
 }
 
 void trace_free(char *file, int line, void *mem)
 {
-	fprintf(stderr, "[%p]\twill be free at [%s] line [%d].\n", mem, file, line);
+	fprintf(stderr, "[%p]\twill be released at [%s] line [%d].\n", mem, file, line);
 
 	free(mem);
 }
