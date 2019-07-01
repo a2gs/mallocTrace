@@ -1,7 +1,7 @@
 /* Andre Augusto Giannotti Scota
  * andre.scota@gmail.com
  *
- * A Doubly Linked List (DLL) sample
+ * A tracer (to stderr) from malloc/free usage.
  *
  * MIT License
  *
